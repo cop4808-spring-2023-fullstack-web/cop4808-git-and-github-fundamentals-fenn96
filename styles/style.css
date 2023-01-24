@@ -1,16 +1,16 @@
 html {
     text-align: center;
     font-family: monospace;
+    overflow: hidden;
 }
 
 #calc {
     display: flex;
-    min-height: 95vh;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
     background-color: azure;
 }
 
