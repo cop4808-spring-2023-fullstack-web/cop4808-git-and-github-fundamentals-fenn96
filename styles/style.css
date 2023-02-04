@@ -53,6 +53,15 @@ button {
     grid-column: span 2;
 }
 
+.square {
+    background-color: #DF2C14;
+    font-weight: bold;
+}
+
+.square:focus {
+    background-color: #e45f4d;
+}
+
 .squareRoot {
     background-color: #DF2C14;
     font-weight: bold;

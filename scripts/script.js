@@ -41,6 +41,9 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
+            } else if(buttons[i].classList.contains('square')) {
+                inputSquare(displayValue);
+                updateDisplay();
             } else if(buttons[i].classList.contains('squareRoot')) {
                 inputSquareRoot(displayValue);
                 updateDisplay();
@@ -150,7 +153,12 @@ function inputSign(num) {
     displayValue = (num * -1).toString();
 }
 
-// Calculate the square root of the number currently displayed
+// Square the number currently displayed using the Math.pow method
+function inputSquare(num) {
+    displayValue = Math.pow(num, 2).toString();
+}
+
+// Calculate the square root of the number currently displayed using the Math.sqrt method
 function inputSquareRoot(num) {
     displayValue = Math.sqrt(num).toString();
 }
