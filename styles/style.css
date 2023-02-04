@@ -80,6 +80,15 @@ button {
     background-color: #e45f4d;
 }
 
+.log {
+    background-color: #DF2C14;
+    font-weight: bold;
+}
+
+.log:focus {
+    background-color: #e45f4d;
+}
+
 .operator {
     background-color: #FF8F1F;    
 }

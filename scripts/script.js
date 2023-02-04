@@ -50,6 +50,9 @@ function clickButton() {
             } else if(buttons[i].classList.contains('fraction')) {
                 inputFraction(displayValue);
                 updateDisplay();
+            } else if(buttons[i].classList.contains('log')) {
+                inputLog(displayValue);
+                updateDisplay();
             } else if(buttons[i].classList.contains('clear'))
                 clearDisplay();
                 updateDisplay();
@@ -169,6 +172,14 @@ function inputSquareRoot(num) {
 // Calculate a fraction where the number currently displayed is the denominator and the numerator is 1
 function inputFraction(num) {
     displayValue = (1 / num).toString();
+}
+
+// Calculate the log in base 10 of the number currently displayed using the Math.log method
+function inputLog(num) {
+    // Calculate the log divided by the log of 10 to get the log in base 10
+    log = Math.log(num) / Math.log(10);
+    // Set the displayValue to the result
+    displayValue = log.toString();
 }
 
 function clearDisplay() {
