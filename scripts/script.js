@@ -41,6 +41,9 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
+            } else if(buttons[i].classList.contains('squareRoot')) {
+                inputSquareRoot(displayValue);
+                updateDisplay();
             } else if(buttons[i].classList.contains('clear'))
                 clearDisplay();
                 updateDisplay();
@@ -145,6 +148,11 @@ function inputPercent(num) {
 
 function inputSign(num) {
     displayValue = (num * -1).toString();
+}
+
+// Calculate the square root of the number currently displayed
+function inputSquareRoot(num) {
+    displayValue = Math.sqrt(num).toString();
 }
 
 function clearDisplay() {

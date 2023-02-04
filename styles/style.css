@@ -20,7 +20,7 @@ html {
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(6, 80px);
     gap: 2px;
 }
 
@@ -52,6 +52,16 @@ button {
 #zero {
     grid-column: span 2;
 }
+
+.squareRoot {
+    background-color: #DF2C14;
+    font-weight: bold;
+}
+
+.squareRoot:focus {
+    background-color: #e45f4d;
+}
+
 
 .operator {
     background-color: #FF8F1F;    
