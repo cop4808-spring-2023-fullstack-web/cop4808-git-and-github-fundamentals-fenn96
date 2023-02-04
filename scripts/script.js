@@ -47,6 +47,9 @@ function clickButton() {
             } else if(buttons[i].classList.contains('squareRoot')) {
                 inputSquareRoot(displayValue);
                 updateDisplay();
+            } else if(buttons[i].classList.contains('fraction')) {
+                inputFraction(displayValue);
+                updateDisplay();
             } else if(buttons[i].classList.contains('clear'))
                 clearDisplay();
                 updateDisplay();
@@ -161,6 +164,11 @@ function inputSquare(num) {
 // Calculate the square root of the number currently displayed using the Math.sqrt method
 function inputSquareRoot(num) {
     displayValue = Math.sqrt(num).toString();
+}
+
+// Calculate a fraction where the number currently displayed is the denominator and the numerator is 1
+function inputFraction(num) {
+    displayValue = (1 / num).toString();
 }
 
 function clearDisplay() {
